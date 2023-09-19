@@ -99,6 +99,7 @@ const adduser =(req, res)=>{
     }
 }
 
+
 app.post('/api/users', adduser)
 app.get('/api/users', getUsers)
 app.get('/api/user/:id', getuser)
@@ -108,3 +109,4 @@ app.delete('/api/user/:id', deleteuser)
 app.listen(port, ()=> {
     console.log(`le server nous ecoute sur le port: ${port}`)
 })
+
